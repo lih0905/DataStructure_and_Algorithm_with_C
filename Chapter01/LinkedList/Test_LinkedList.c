@@ -51,17 +51,16 @@ int main(void)
     // 모든 노드를 메모리에서 제거
     printf("\nDetroying List...\n");
 
-    SLL_DestroyAllNodes(&List);
-    // for (i = 0; i < Count; i++)
-    // {
-    //     Current = SLL_GetNodeAt(List, 0);
+    for (i = 0; i < Count; i++)
+    {
+        Current = SLL_GetNodeAt(List, 0);
 
-    //     if (Current != NULL)
-    //     {
-    //         SLL_RemoveNode(&List, Current);
-    //         SLL_DestroyNode(Current);
-    //     }
-    // }
+        if (Current != NULL)
+        {
+            SLL_RemoveNode(&List, Current);
+            SLL_DestroyNode(Current);
+        }
+    }
 
     return 0;
 }

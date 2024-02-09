@@ -24,7 +24,7 @@ int main(void)
     //  구매포인트에 대해 오름차순으로 정렬
     qsort((void *)DataSet, Length, sizeof(Point), ComparePoint);
 
-    // 구매포인트가 671.78점인 고객 찾기
+    // 구매포인트가 671.78점인 고객 찾기q
     target.id = 0;
     target.point = 671.78;
 
